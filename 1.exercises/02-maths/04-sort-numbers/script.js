@@ -12,10 +12,25 @@
 (() => {
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", () => {
+    /* document.getElementById("run").addEventListener("click", () => {
         // your code here
         var numbers = document.getElementById("numbers").value
         var points = [numbers];
         points.sort();
+    }); */
+
+    let numbers = document.getElementById("numbers").value;
+    let arr = numbers.split(", ");
+
+    for (i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(arr[i]);
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+        arr.sort((a, b) => a - b); //Fonction de tri
+        console.log(arr);
+
     });
+
+
 })();
