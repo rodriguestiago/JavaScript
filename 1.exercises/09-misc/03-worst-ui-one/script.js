@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
+  var slider2 = document.getElementById("slider");
+var output = document.getElementById("target");
+output.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output.innerHTML = this.value;
+}
+    
+    
+    
     // your code here
 })();
