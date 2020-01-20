@@ -89,12 +89,27 @@
     ];
 
     
-    
+    let majeurArray = [];
       document.getElementById("run").addEventListener("click", () => {
-       
+        
+
+        people.forEach(element => {
+            if(element.age>18) {
+                majeurArray.push(element);
+            }
+
+        
+        });
+    console.log(majeurArray);
+
+
+   
+
+
+
           
           
-          var arrayLength = people.length;
+   /*        var arrayLength = people.length;
 for (var i = 0; i < arrayLength; i++) {
     console.log(people[i]);
     
@@ -108,7 +123,7 @@ for (var i = 0; i < arrayLength; i++) {
           
           people.forEach(function(person){
         console.log(person.firstname)
-    });
+    }); */
           
           
           

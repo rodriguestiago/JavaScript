@@ -93,8 +93,12 @@
     
      document.getElementById("run").addEventListener("click", () => {
          
-         
-         
+        people.forEach(element => { 
+            if (element.firstname == "Jean" && element.lastname == "Dupont"){ 
+                console.log(element.email);
+                console.log(people.indexOf(element));
+            } 
+        });
       
          
          
@@ -110,9 +114,9 @@
          
          
          
-         var result = _.findWhere(people, {email: 'jdupont@elpais.com'});
+        /*  var result = _.findWhere(people, {email: 'jdupont@elpais.com'});
 
-alert(result.email);
+alert(result.email); */
          
          
          
