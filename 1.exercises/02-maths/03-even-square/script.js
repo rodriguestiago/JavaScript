@@ -11,15 +11,18 @@
 
 (() => {
     document.getElementById("run").addEventListener("click", () => {
-        var a = 1;
+         var a = 1;
         for(a=1; a<=21; a++){
             
         if(a%2==0)
         {
             document.write(a);
         }
-        }
+        } 
       
+       
+
+
         // your code here
     });
 })();

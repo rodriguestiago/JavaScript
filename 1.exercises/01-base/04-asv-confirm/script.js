@@ -10,7 +10,18 @@
 // You will have time to focus on it later.
 
 (() => {
-    let age = prompt("Quelle est votre age?");
+
+    do{
+        age = prompt("Quelle est votre age?");
+        sexe = prompt("Quelle est votre sexe?");
+        ville = prompt("Ou habitez vous?");
+        confirmation = confirm("Est ce correct?" + "\n " + age + "\n " + sexe + "\n " + ville);
+        }while (confirmation == false);
+
+
+
+
+    /* let age = prompt("Quelle est votre age?");
     let sexe = prompt("Quelle est votre sexe?");
     let ville = prompt("Ou habitez vous?");  
     let box =  confirm("Est ce correct?" + "\n " + age + "\n " + sexe + "\n " + ville);
@@ -21,6 +32,6 @@ while(box!=true){
     let ville = prompt("Ou habitez vous?");
 	let box =  confirm("Est ce correct?" + "\n " + age + "\n " + sexe + "\n " + ville);
 }
-alert("Très bien!")
+alert("Très bien!") */
 
 })();

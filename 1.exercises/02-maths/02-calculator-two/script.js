@@ -13,8 +13,35 @@
     // to get the value of an input: document.getElementById("element-id").value
     
     const performOperation = operation => {
+
+
+
+        var num1 = document.getElementById("op-one").value;
+        var num2 = document.getElementById("op-two").value;
+        var result;
+
+        switch (operation) {
+            case 'addition':
+                result = parseInt(num1) + parseInt(num2);
+                break;
+            case 'substraction':
+                result = parseInt(num1) - parseInt(num2);
+                break;
+            case 'multiplication':
+                result = parseInt(num1) * parseInt(num2);
+                break;
+            case 'division':
+                result = parseInt(num1) / parseInt(num2);
+                break;
+
+        }
+        alert(result);
+    
+    
         
+
         
+        /* 
         let a = document.getElementById("op-one").value;
         let b = document.getElementById("op-two").value;
         let operator = document.getElementsByClassName("operator").value;
@@ -39,24 +66,9 @@
                     
                     
             }
-            
+             */
             
          
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
