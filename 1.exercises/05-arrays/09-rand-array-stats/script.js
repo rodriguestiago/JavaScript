@@ -10,6 +10,39 @@
 // You will have time to focus on it later.
 
 (() => {
+
+
+
+
+  document.getElementById("run").addEventListener("click", () =>{ 
+    
+    let numbers = []; 
+
+    for (let i = 1; i <= 10; i++) {
+        let number = Math.floor(Math.random() * 100)+ 1;
+        document.getElementById("n-"+ i).textContent = number;
+        numbers.push(number);
+    }
+
+    let somme = 0; 
+    for(let i= 0; i<numbers.length; i++){
+        somme = somme + numbers[i];
+    }
+
+    document.getElementById("min").textContent = Math.min(...numbers);
+    document.getElementById("max").textContent = Math.max(...numbers);
+    document.getElementById("sum").textContent = somme;
+    document.getElementById("average").textContent = somme/numbers.length; 
+});
+
+
+
+
+
+
+
+
+/* 
     const numbers = [
         2,
         12,
@@ -30,7 +63,7 @@
     let randIndex = Math.floor(rand * numbersLenght);
     let randomNumber = numbers[randIndex];
     
-    document.getElementById("run").addEventListener("click", () => {
+    document.getElementById("run").addEventListener("click", () => { */
 //        document.getElementById("n-1").innerHTML = randomNumber;
 //     
 //       
@@ -43,7 +76,7 @@
         
         
         
-        
+        /* 
         var arr = [];
 for (var i = 0; i < 10; i++)
 {
@@ -78,7 +111,7 @@ Array.prototype.min = function() {
         
         
     
-    });
+    }); */
     
     
     

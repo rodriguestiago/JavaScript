@@ -91,7 +91,30 @@
     
     
       document.getElementById("run").addEventListener("click", () => {
+
+
+        const NewPeople = [];
+        people.forEach(element => NewPeople.push(element.age));
+        
+        console.log(NewPeople.reduce(myFunc));
+    
+        function myFunc(total, num) {
+          return total + num;
+        } 
+        
        
+
+            /* console.log(people.reduce((accumulator, currentValue) => accumulator + currentValue.age, 0));  */
+            /* prends tableau people, donner la fonction .reduce 
+             somme, avec la valeur current => fleche pour la fonction somme ou acculumator + valeur current "." age, init à 0 l'acuumulator))*/
+       
+
+
+
+
+
+
+
 //          function sumofArray(sum, num) { 
 //            return sum + num; 
 //        } 
@@ -102,9 +125,9 @@
           
           
        
-    people.reduce(function(person){
+    /* people.reduce(function(person){
         console.log(person)
-    });
+    }); */
    
           
           

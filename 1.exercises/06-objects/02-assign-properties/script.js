@@ -28,14 +28,18 @@
     };
     
     
-      document.getElementById("run").addEventListener("click", () => {
-       
-          
-           _.forEach(computers, function (obj) {
-    // _.set won't throw errors if obj is not an object. With more complex objects, if a portion of the path doesn't exist, _.set creates it
-     _.set(obj, 'status', 'active');
- });
-          console.log(computers);
+    document.getElementById("run").addEventListener("click", () => {
+        computers.forEach(computer => {
+
+            if (!computer.hasOwnProperty("available"))
+                computer.available = defaultProps.available;
+            if (!computer.hasOwnProperty("user"))
+                computer.user = defaultProps.user;
+            if (!computer.hasOwnProperty("os"))
+                computer.os = defaultProps.os;
+
+        });
+        console.log(computers);
           
           
           
