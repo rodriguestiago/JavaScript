@@ -10,10 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-//    const ol = document.getElementById('target');
-//    const url = 'http://localhost:3000/heroes';
-//    
-//    document.getElementById('run').addEventListener('click', getData);
+    const ol = document.getElementById('target');
+    const url = 'http://localhost:3000/heroes';
+    
+    document.getElementById('run').addEventListener('click', getData);
     
     
 //   function getData(){
@@ -39,28 +39,28 @@
     
     
     
-//         function getData(){
-//     
-//     fetch('http://localhost:3000/heroes')
-//        .then((res) => { return res.json() })
-//        .then((data) => {
-//            let result = ``;
-//            data.forEach((user) => {
-//                const { id, name, alterEgo, abilities } = user
-//                result +=
-//                    `<div>
-//                     <h5> ID: ${id} </h5>
-//                         <ul class="w3-ul">
-//                             <li> Name : ${name}</li>
-//                             <li> alterEgo : ${alterEgo} </li>
-//                             <li> abilities : ${abilities}</li>
-//                         </ul>
-//                      </div>`;
-//                        document.getElementById('target').innerHTML = result;
-//                    });
-//                })
-//   
-//};
+         function getData(){
+     
+     fetch('http://localhost:3000/heroes')
+        .then((res) => { return res.json() })
+        .then((data) => {
+            let result = ``;
+            data.forEach((user) => {
+                const { id, name, alterEgo, abilities } = user
+                result +=
+                    `<div>
+                     <h5> ID: ${id} </h5>
+                         <ul class="w3-ul">
+                             <li> Name : ${name}</li>
+                             <li> alterEgo : ${alterEgo} </li>
+                             <li> abilities : ${abilities}</li>
+                         </ul>
+                      </div>`;
+                        document.getElementById('target').innerHTML = result;
+                    });
+                })
+   
+};
     
     
     
@@ -104,45 +104,6 @@
 //                })
 //   
 //};
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    fetch('https://example.com/delete-item/' + id, {
-  method: 'DELETE',
-})
-.then(res => res.text()) // or res.json()
-.then(res => console.log(res))
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
     
     // your code here
