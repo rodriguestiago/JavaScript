@@ -14,13 +14,24 @@
   constructor(firstname, lastname) {
     this.firstname = firstname;
     this.lastname = lastname;
-      this.sayHello = "Hello";
+      /* this.sayHello = "Hello"; */
   }
-        sayHello() {
-    return "this.sayHello" + this.firstname + this.lastname + "!";
+
+  sayHello() {
+    return "hello, " + this.firstname + " " + this.lastname + "!"
+
+
+        /* sayHello() {
+    return "this.sayHello" + this.firstname + this.lastname + "!"; */
   }
     }
-    
+    document.getElementById("run").addEventListener("click", () => {
+    let tiago = new Person("tiago", "rodrigues");
+    console.log(tiago.sayHello());
+
+    });
+
+    /* 
     document.getElementById("run").addEventListener("click", () => {
         const John = new Person("John", "Tree");
         
@@ -28,9 +39,9 @@
         
         console.log(Person.call.sayHello + John.firstname + " " + John.lastname);
         mycar = new Person("Ford", "Tree");
-        console.log(mycar.firstname + Person.sayHello);
+        console.log(mycar.firstname + Person.sayHello); */
         
-    });
+    /* }); */
     
     
     

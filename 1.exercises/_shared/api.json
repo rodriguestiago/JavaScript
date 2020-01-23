@@ -4,13 +4,20 @@
       "id": 1,
       "name": "Cyclops",
       "alterEgo": "Scott Summers",
-      "abilities": ["Optic force blasts", "Master tactician"]
+      "abilities": [
+        "Optic force blasts",
+        "Master tactician"
+      ]
     },
     {
       "id": 2,
       "name": "Marvel Girl",
       "alterEgo": "Jean Grey",
-      "abilities": ["Telekinesis", "Telepathy", "Astral projection"]
+      "abilities": [
+        "Telekinesis",
+        "Telepathy",
+        "Astral projection"
+      ]
     },
     {
       "id": 3,
@@ -39,6 +46,208 @@
         "Cold and ice manipulation",
         "Ability to assume an enhanced physical form made of solid ice"
       ]
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "name": {},
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "name": {},
+      "id": 11
+    },
+    {
+      "name": null,
+      "id": 12
+    },
+    {
+      "name": null,
+      "id": 13
+    },
+    {
+      "name": null,
+      "id": 14
+    },
+    {
+      "name": "",
+      "id": 15
+    },
+    {
+      "name": "",
+      "id": 16
+    },
+    {
+      "name": "",
+      "id": 17
+    },
+    {
+      "name": "",
+      "id": 18
+    },
+    {
+      "name": "name",
+      "id": 19
+    },
+    {
+      "name": "",
+      "id": 22
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 29
+    },
+    {
+      "id": 30
+    },
+    {
+      "id": 31
+    },
+    {
+      "id": 32
+    },
+    {
+      "id": 33
+    },
+    {
+      "id": 34
+    },
+    {
+      "id": 35
+    },
+    {
+      "id": 36
+    },
+    {
+      "name": "test",
+      "age": "6",
+      "id": 37
+    },
+    {
+      "name": "test",
+      "age": "6",
+      "id": 38
+    },
+    {
+      "name": "test",
+      "age": "6",
+      "id": 39
+    },
+    {
+      "name": "",
+      "age": "6",
+      "id": 40
+    },
+    {
+      "name": "nom",
+      "age": "6",
+      "id": 41
+    },
+    {
+      "name": "nom",
+      "age": "6",
+      "id": 42
+    },
+    {
+      "name": "zefezfez",
+      "age": "6",
+      "id": 43
+    },
+    {
+      "name": "bhtrhr",
+      "age": "6",
+      "id": 44
+    },
+    {
+      "name": "gze",
+      "alterEgo": "gze",
+      "id": 45
+    },
+    {
+      "name": "efzfeezfr",
+      "alterEgo": "tr",
+      "id": 46
+    },
+    {
+      "name": "nom",
+      "alterEgo": "alter",
+      "pouvoirs": "pouvoir",
+      "id": 47
+    },
+    {
+      "name": "",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 48
+    },
+    {
+      "name": "",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 49
+    },
+    {
+      "name": "dz",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 51
+    },
+    {
+      "name": "gregre",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 53
+    },
+    {
+      "name": "",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 54
+    },
+    {
+      "name": "",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 55
+    },
+    {
+      "name": "dzefz",
+      "alterEgo": "",
+      "pouvoirs": "",
+      "id": 56
+    },
+    {
+      "name": "gtrhr",
+      "alterEgo": "hth",
+      "pouvoirs": "erzgz",
+      "id": 57
     }
   ]
 }
