@@ -13,6 +13,20 @@
     
    
 
+    /* let image = document.getElementsByTagName("img")[0];
+    let hover = image.getAttribute("data-hover");
+
+    image.addEventListener("mouseover", () => {
+      image.src = hover;
+    }); */
+
+
+
+
+
+
+    
+
 //    window.onload = myFunction();
     document.querySelector("img").addEventListener("mouseover", myFunction);
 //    document.getElementById("demo").addEventListener("mouseout", myFunction2);

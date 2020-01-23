@@ -11,7 +11,34 @@
 
 (() => {
     
-    window.lib.getPosts()
+
+
+
+    function getPost(error, article) {
+        if(error) {
+              console.log(error);
+        }else {
+              article.forEach(element => {
+                    console.log(element);
+              });
+              }
+        }
+        document.getElementById("run").addEventListener("click", () => {
+              setTimeout(window.lib.getPosts(getPost), 2000);
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+    /* window.lib.getPosts()
     
     
     
@@ -19,7 +46,7 @@
     
     function timeFunction() {
  setTimeout(function(){ window.lib.getPosts(callback); }, 3000);
-}
+} */
     
 
     

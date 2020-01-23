@@ -10,6 +10,35 @@
 // You will have time to focus on it later.
 
 (() => {
+  let source = document.getElementById("source")
+  let dataImage = source.getAttribute("data-image");
+  let image = document.createElement('img');
+  image.src = dataImage;
+  document.getElementById("target").appendChild(image);
+  source.parentNode.removeChild(source);
+
+
+
+ /*  let tagOne = document.querySelector("#source")
+  let tagImg = document.createElement('img')
+
+  console.log(tagOne.getAttribute("data-image"))
+
+  document.getElementById("target").appendChild(tagImg);
+
+  document.querySelector('img').setAttribute("src", tagOne.getAttribute("data-image"));
+
+  let father = document.getElementsByTagName("section")
+
+  let Parent = Array.from(father);
+
+  console.log(Parent[1])
+
+  Parent[1].removeChild(Parent[1].firstElementChild); */
+
+
+
+
  //   window.onload = myFunction();
 //    window.onload = myFunction2();
    
@@ -19,8 +48,8 @@
 //var x = document.querySelector("source").innerHTML = "owned";
 //        console.log(x);
 //}
-    
-    
+    //test--------
+   /*  
     var x = document.getElementById("source").getAttribute("data-image");
     console.log(x);
     
@@ -34,10 +63,10 @@
     
 //    function myFunction() {
   var myobj = document.getElementById("source");
-  myobj.remove();
+  myobj.remove(); */
 //}
 //    
-    
+    //----------------
     
     
     
