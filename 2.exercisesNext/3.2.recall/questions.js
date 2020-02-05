@@ -120,6 +120,41 @@ let makeNegative = (number) => {
 }
 
 let numberOfPalindromes = (array) => {
+//    console.log(array);
+//    
+//    let count = 0;
+//    
+//    function palindrome(text) {
+//// Split, reverse and join string to get reversed text
+//var reversedText  = array.toLowerCase()
+//                    .split('').reverse().join('');
+//
+//
+//return array === reversedText;
+//
+//
+//}
+//console.log();
+
+//function findPalindromes(sentence) {
+//	const words = array.replace(/[^\w\s]/gi, '').split(' ');
+//  const palindromes = words.filter(isPalindrome);
+//  return palindromes;
+//}
+//
+//function isPalindrome(word) {
+//  if (array.length <= 0) return false;
+//  array = array.toLowerCase();
+//  for (let i = 0; i < array.length / 2; i++) {
+//  	if (array[i] !== array[array.length - 1 - i]) return false;
+//  }
+//  return true;
+//}
+    
+//    findPalindromes(array);
+//    console.log(findPalindromes);
+//    console.log(findPalindromes("Madam and John went out at noon"))
+    
     
     
     
@@ -394,7 +429,76 @@ let factorial = (number) => {
 let findAnagrams = (string) => {
     //console.log(string);
     
+    
+    
+    var input = "mad, ma, cbb";
+var words = input.split(", ");
+for ( var i = 0; i < words.length; i++) {
+    var word = words[i];
+    var alphabetical = word.split("").sort().join("");
+
+    for (var j = 0; j < words.length; j++) {
+
+        if (i === j) {
+            continue;
+        }
+
+        var other = words[j];
+        if(alphabetical === other.split("").sort().join("")){
+            console.log(word + " - " + other + " (" + i + ", " + j + ")");
+        }
+    }
+}
+    
+    
+    
+    
   
+    
+    
+//  var words = ["dell", "ledl", "abc", "cba"];
+//
+//// The output object
+//var anagrams = {};
+//
+//for (var i in words) {
+//    var word = words[i];
+//
+//    // sort the word like you've already described
+//    var sorted = sortWord(word);
+//
+//    // If the key already exists, we just push
+//    // the new word on the the array
+//    if (anagrams[sorted] != null) {
+//        anagrams[sorted].push(word);
+//    } 
+//    // Otherwise we create an array with the word
+//    // and insert it into the object
+//    else {
+//        anagrams[sorted] = [ word ];
+//    }
+//}
+//
+//// Output result
+//for (var sorted in anagrams) {
+//    var words = anagrams[sorted];
+//    var sep = ",";
+//    var out = "";
+//    for (var n in words) {
+//        out += sep + words[n];
+//        sep = "";
+//    }
+//    document.writeln(sorted + ": " + out + "<br />");
+//}
+
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
 let convertToCelsius = (number) => {
