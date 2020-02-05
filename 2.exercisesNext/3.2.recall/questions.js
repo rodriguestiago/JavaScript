@@ -120,6 +120,10 @@ let makeNegative = (number) => {
 }
 
 let numberOfPalindromes = (array) => {
+    
+    
+    
+    
 //    //console.log(array);
 //    
 //    function reverse(text) {
@@ -217,6 +221,35 @@ let getElementsUntilGreaterThanFive = (array) => {
 
 let convertArrayToObject = (array) => {
     
+   // console.log(array);
+   
+
+//    
+//    var temp = array.toString() ;
+//var theObj = JSON.parse(array);
+//console.log(theObj);
+    
+//    let O = {};
+//
+//array.forEach(function(item) {
+//    var parts = item.split(':').map(function(x) { return x.trim().replace(/\"/g,'') });
+//    
+//    O[parts[0]] = parts[1];
+//});
+//console.log(JSON.stringify(O, null, 4));
+//    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 //    const convertArrayToObject = (array, key) => {
 //    const initialValue = {};
 //    return array.reduce((obj, item) => {
@@ -245,27 +278,47 @@ let getAllLetters = (array) => {
 }
 
 let swapKeysAndValues = (object) => {
-//    console.log(object);
+    const newData = Object.keys(object).reduce(function(obj, key) {
+  obj[object[key]] = key;
+  return obj;
+}, {});
+    return newData;
 }
 
 let sumKeysAndValues = (object) => {
+//    console.log(object);
+//    
 //    const sumValues = obj => Object.values(obj).reduce((a, b) => a + b);
 //    console.log(sumValues(object));
 //    
-//    
+//    console.log(parseInt(object));
+   
+   
+    
+    
+//    const sumKeys = obj => parseInt(Object.keys(obj).reduce((a, b) => a + b));
+//    console.log(sumKeys(object));
+   
+//    console.log(parseInt(sumKeys(object)));
 //
 //    
 //    
 //    
-//    console.log(object);
+ 
     
     
 }
 
 let removeCapitals = (string) => {
-   //console.log(string);
-    return string.replace( /[^a-z]/g, ' ' );
-    //console.log(string.replace( /[^a-z]/g, ' ' ));
+    string.replace(/(?![a-z])./g, '')
+    
+    
+    
+//    console.log(string);
+//    //return string.replace( /[^a-z]/g, '' );
+//    
+//    console.log(string.replace(/(?![a-z])./g, ' '));
+//    //console.log(string.replace( /[^a-z]/g, '' ));
 }
 
 let roundUp = (number) => {
@@ -349,15 +402,67 @@ let convertToCelsius = (number) => {
     
     
   
-  var fTemp = number;
-  var fToCel = (fTemp - 32) * 5 / 9;
-  var message = fTemp+ ' ' + fToCel + '';
-    console.log(message);
+    var fTemp = number;
+    var fToCel = Math.round((fTemp - 32) * 5 / 9);
+    var message = fToCel;
+    return message;
 
     
    
 }
 
 let letterPosition = (array) => {
-    return 'Write your method here';
+
+    
+    
+    function alphabetPosition(array){
+  return array.split('').map(function(character){ return character.charCodeAt(0) - 'a'.charCodeAt(0) + 1; })
+}
+alphabetPosition(array);
+console.log(alphabetPosition(array));
+    
+    
+    
+    
+    
+    
+    
+    
+//    let alphabet = "abcdefghijklmnopqrstuvwxyz".split('');
+//let alphabetPosition = text => 
+//  text.split('').map(x => alphabet.indexOf(x) + 1);
+//    
+//    
+////console.log(alphabetPosition(test));
+//
+//    alphabetPosition(array);
+//    console.log(alphabetPosition);
+//    
+//    
+   // console.log(array);
+    
+    
+    
+    
+  //  const result = array.toLowerCase().match(/[a-z]/g).map(c => c.charCodeAt(0) - 10).join(' ');
+
+
+    
+    
+    
+    
+    //console.log(array);
+    
+   
+//  var result = "";
+//  for (var i = 0; i < array.length; i++) {
+//    var code = array.toUpperCase().charCodeAt(i)
+//    if (code > 64 && code < 91) result += (code - 64) + " ";
+//  }
+//
+//  console.log(result.slice(0, result.length - 1)); 
+
+
+    
+    
 }
