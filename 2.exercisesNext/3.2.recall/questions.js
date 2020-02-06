@@ -309,7 +309,7 @@ let convertArrayToObject = (array) => {
 }
 
 let getAllLetters = (array) => {
-   // console.log(array);
+    console.log(array);
 }
 
 let swapKeysAndValues = (object) => {
