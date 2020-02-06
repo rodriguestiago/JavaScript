@@ -1,8 +1,8 @@
-let giveLetter = prompt("Rentrez une lettre (en majuscule)");
+//let giveLetter = prompt("Rentrez une lettre (en majuscule)");
 
 
 
-//let giveLetter = "BONJOUR";
+let giveLetter = "U";
 let letters = [
   "B",
   "O",
@@ -35,9 +35,22 @@ function guessLetter(){
         
         if(giveLetter == "B"){
             PlayerLetters.splice(0, 1, giveLetter);
+            console.log(PlayerLetters);
+            
+            
+            
             let t = prompt("Rentrez une lettre (en majuscule)");
-
+    
+            
+//            if(t = "N"){
+//                PlayerLetters.splice(2, 1, t);
+//                console.log(PlayerLetters);
+//            }
+            
+            
            }
+        
+        
         else if(giveLetter == "O"){
             PlayerLetters.splice(1, 1, giveLetter);
             PlayerLetters.splice(4, 1, giveLetter);
@@ -57,7 +70,7 @@ function guessLetter(){
         else{
             PlayerLetters.splice(6, 1, giveLetter);
         }
-        
+        console.log(PlayerLetters);
         
         
         
@@ -65,7 +78,7 @@ function guessLetter(){
 //        PlayerLetters.splice(0, 1, giveLetter);
         
         //PlayerLetters.push(giveLetter);
-        console.log(PlayerLetters);
+        
         }
     else{
         guessWord();
@@ -75,10 +88,24 @@ function guessLetter(){
 
 let theWord = '';
 function guessWord(){
-     theWord = giveLetter.includes("BONJOUR");
-  
-alert("Vous avez gagné");
+    if(theWord = giveLetter.includes("BONJOUR")){
+       alert("Vous avez gagné");
     console.log(letters);
+       
+       }
+    else {
+        console.log(PlayerLetters);
+    }
+    
+    
+//     theWord = giveLetter.includes("BONJOUR");
+//  
+//alert("Vous avez gagné");
+//    console.log(letters);
+//    
+    
+    
+    
 //    if (isInArray == true){
 //}
 }
